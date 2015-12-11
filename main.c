@@ -20,9 +20,9 @@ static uchar image;
 
 void main(void) {
     setPaletteBackground(paletteBars);
-	unpackNametableRLE(bars, NAMETABLE_A);
-	onGraphics();
-	while(TRUE) {
+    unpackNametableRLE(bars, NAMETABLE_A);
+    onGraphics();
+    while(TRUE) {
         uchar pad = padPush(PAD_PORT_PLAYER_1);
         if (pad) {
             offGraphics();
