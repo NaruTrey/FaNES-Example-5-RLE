@@ -23,7 +23,7 @@ void main(void) {
     unpackNametableRLE(bars, NAMETABLE_A);
     onGraphics();
     while(TRUE) {
-        uchar pad = padPush(PAD_PORT_PLAYER_1);
+        uchar pad = padPush(PAD_PORT_1);
         if (pad) {
             offGraphics();
             if (image) {
